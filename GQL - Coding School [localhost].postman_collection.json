@@ -1,0 +1,269 @@
+{
+	"info": {
+		"_postman_id": "fdffbb09-962b-4c9f-a2ba-b1d259aabe2e",
+		"name": "GQL - Coding School [localhost]",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "query-createTokens",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "{\n  createTokens(input:{email:\"ahmedbazy@gmail.com\", password:\"Ahmed@hihealth123\"}){\n    accessToken\n    refreshToken\n    accessTokenExpire\n    refreshTokenExpire\n  }\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query-refreshTokens",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "{\n  clearTokens{\n    message\n  }\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query-clearTokens",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation {\n  invalidateUserToken(userId: \"01EGXMD8378F5TZ8NGP9J8J3TZ\") {\n    message\n  }\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query-invalidateUserToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation {\n  mutator {\n    upsertTag(\n      input: {\n        id: \"01FMZJXYCVXDSHFYY6MN5RW9KK\"\n        name: \"React\"\n        description: \"Front-End JavaScript library\"\n        visibility: true\n      }\n    ) {\n      id\n      name\n      description\n      visibility\n      imgSrc\n      updatedAt\n      createdAt\n    }\n  }\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query-resetPassword",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "{\n  getUserAuthorization(id:\"01EGXMD8378F5TZ8NGP9J8J3TZ\") {\n  \tid\n    userId\n    actions {\n      name\n      permissions\n    }\n  }\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query-getUserAuthorization",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation {\n  resetPassword(input:{newPassword:\"Ahmed@hihealth123\", userId: \"01EGXMD8378F5TZ8NGP9J8J3TZ\", verificationId: \"01EGXMD8378F5TZ8NMP9J8J3TZ\"}) {\n    message\n  }\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query-updateAuthorization",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "{\n  listUsers{\n    id\n    authorizationId\n    name{\n      first\n      last\n    }\n    avatar\n    email\n    gender\n    isActive\n    isSuper\n    createdAt\n    updatedAt\n  }\n}\n\n",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query-listUsers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation {\n  updateAuthorization(\n    input: {\n      userId: \"01EGXMD8378F5TZ8NGP9J8J3TZ\"\n      actions: [\n        {\n          name: \"users\"\n          permissions: [\n            \"create:any\"\n            \"read:any\"\n            \"update:any\"\n            \"delete:any\"\n            \"list:any\"\n          ]\n        }\n        {\n          name: \"authorizations\"\n          permissions: [\n            \"create:any\"\n            \"read:any\"\n            \"update:any\"\n            \"delete:any\"\n            \"list:any\"\n          ]\n        }\n        {\n          name: \"courses\"\n          permissions: [\n            \"create:any\"\n            \"read:any\"\n            \"update:any\"\n            \"delete:any\"\n            \"list:any\"\n            \"upsert:any\"\n          ]\n        }\n        {\n          name: \"tags\"\n          permissions: [\n            \"create:any\"\n            \"read:any\"\n            \"update:any\"\n            \"delete:any\"\n            \"list:any\"\n            \"upsert:any\"\n          ]\n        }\n        {\n          name: \"posts\"\n          permissions: [\n            \"create:any\"\n            \"read:any\"\n            \"update:any\"\n            \"delete:any\"\n            \"list:any\"\n            \"upsert:any\"\n          ]\n        }\n      ]\n    }\n  ) {\n    userId\n    id\n    actions {\n      name\n      permissions\n    }\n  }\n}\n",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query-listCourses",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "{\n  refreshTokens{\n    accessToken\n    refreshToken\n    accessTokenExpire\n    refreshTokenExpire\n  }\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mutation-upsertTag",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "{\n  querier {\n    listCourses{\n      id\n      accessedByUserIds\n      authorId\n      author{\n        name{\n          first\n          last\n        }\n        avatar\n      }\n      lang\n      slug\n    }\n    listTags{\n      id\n      imgSrc\n      name\n      visibility\n      description\n      createdAt\n      updatedAt\n    }\n    listPosts(input: { page: { number: 1, size: 10 } }) {\n      id\n      authorId\n      author{\n        id\n        email\n        name{\n          first\n          last\n        }\n      }\n      slug\n      nanoId\n      isPremium\n      lang\n      visibility\n      tagIds\n      tags {\n        id\n        name\n        description\n      }\n      body\n      createdAt\n      updatedAt\n    }\n  }\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

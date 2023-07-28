@@ -1,0 +1,22 @@
+version: '3.4'
+
+networks:
+  starlink:
+    driver: bridge
+
+services:
+  codding_school:
+    hostname: codding_school
+    container_name: codding_school
+    command: ['yarn', 'start']
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    restart: always
+    volumes:
+      - ./node_modules:/home/node/coding_school/node_modules
+      - ./:/home/node/coding_school
+    ports:
+      - '5002:5002'
+    networks:
+      - starlink

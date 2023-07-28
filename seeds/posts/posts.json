@@ -1,0 +1,56 @@
+[
+  {
+    "accessedByUserIds": ["01EGXMD8378F5TZ8NGP9J8J3TZ"],
+    "authorId": "01EGXMD8378F5TZ8NGP9J8J3TZ",
+    "id": "01FKVNWECRYYQKCF8S9J7F84ZJ",
+    "isPremium": true,
+    "nanoId": "Axt9Dhb67n",
+    "nextPostId": "01FKVPMBX2PKQ2GNT8TA8RKPYE",
+    "postContentIds": ["01G1ER2422R36PAGYSTT63EBH5"],
+    "prevPostId": "",
+    "slug": "what-is-a-function",
+    "tagIds": [
+      "01FKVE4Z58CZ4KZ3XMCECGYJ6K",
+      "01FKVE4N0XJB262QFD1Z17NZFH",
+      "01FKVE2B90D6C52BAEZ2KB8F6P"
+    ],
+    "type": "COURSE",
+    "visibility": true
+  },
+  {
+    "accessedByUserIds": ["01EGXMD8378F5TZ8NGP9J8J3TZ"],
+    "authorId": "01EGXMD8378F5TZ8NGP9J8J3TZ",
+    "id": "01FKVPMBX2PKQ2GNT8TA8RKPYE",
+    "isPremium": true,
+    "nanoId": "Cif1Z019zW",
+    "nextPostId": "01FKVPRH8A1RQAWQMZJRB7VXXE",
+    "postContentIds": ["01G1ER5VTK9GBMC4BSFVQ98AHS"],
+    "prevPostId": "01FKVNWECRYYQKCF8S9J7F84ZJ",
+    "slug": "iife-and-scoping",
+    "tagIds": [
+      "01FKVE4Z58CZ4KZ3XMCECGYJ6K",
+      "01FKVE4N0XJB262QFD1Z17NZFH",
+      "01FKVE2B90D6C52BAEZ2KB8F6P"
+    ],
+    "type": "COURSE",
+    "visibility": true
+  },
+  {
+    "accessedByUserIds": ["01EGXMD8378F5TZ8NGP9J8J3TZ"],
+    "authorId": "01EGXMD8378F5TZ8NGP9J8J3TZ",
+    "id": "01FKVPRH8A1RQAWQMZJRB7VXXE",
+    "isPremium": true,
+    "nanoId": "sG3qrM2H3g",
+    "nextPostId": "",
+    "postContentIds": ["01G1ER89N3ASBJTPYP3J85FR7Y"],
+    "prevPostId": "01FKVPMBX2PKQ2GNT8TA8RKPYE",
+    "slug": "objects",
+    "tagIds": [
+      "01FKVE4Z58CZ4KZ3XMCECGYJ6K",
+      "01FKVE4N0XJB262QFD1Z17NZFH",
+      "01FKVE2B90D6C52BAEZ2KB8F6P"
+    ],
+    "type": "COURSE",
+    "visibility": true
+  }
+]

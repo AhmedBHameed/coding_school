@@ -102,3 +102,13 @@ dist
 
 # TernJS port file
 .tern-port
+build
+
+# Ignore keys files
+keys
+
+# Avoid seeding migration
+migrations/20220731182538-seeds_init.js
+
+# Config files
+migrate-mongo-config.js

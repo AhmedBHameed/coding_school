@@ -1,0 +1,23 @@
+[
+    {
+        "id": "01FKVE2B90D6C52BAEZ2KB8F6P",
+        "name": "HTML",
+        "imgSrc": "",
+        "description": "HyperText Markup Language",
+        "visibility": true
+    },
+    {
+        "id": "01FKVE4N0XJB262QFD1Z17NZFH",
+        "name": "CSS",
+        "imgSrc": "",
+        "description": "Cascading Style Sheets",
+        "visibility": true
+    },
+    {
+        "id": "01FKVE4Z58CZ4KZ3XMCECGYJ6K",
+        "name": "JS",
+        "imgSrc": "",
+        "description": "JavaScript",
+        "visibility": true
+    }
+]
